@@ -1,9 +1,9 @@
-module.export = {
+module.exports = {
   // === Base (모든 프로젝트 공통) ===
 
   // 한 줄의 최대 길이를 설정 (기본값: 80)
   // 이 길이를 초과하면 자동으로 줄바꿈이 발생
-  printWidth: 100,
+  printWidth: 80,
 
   // 들여쓰기 시 사용할 공백 문자 수 (기본값: 2)
   // useTabs가 false일 때만 적용됨
@@ -23,13 +23,13 @@ module.export = {
   singleQuote: true,
 
   // 객체 속성에 따옴표 추가 방식 (기본값: "as-needed")
-  quoteProps: "as-needed",
+  quoteProps: 'as-needed',
   // - "as-needed": 필요한 경우에만 따옴표 추가
   // - "consistent": 하나라도 따옴표가 필요하면 모든 속성에 따옴표 추가
   // - "preserve": 입력된 따옴표 스타일 유지
 
   // 객체, 배열 등의 후행 쉼표 설정 (기본값: "es5")
-  trailingComma: "es5",
+  trailingComma: 'es5',
   // - "all": 모든 구문에서 후행 쉼표 사용 (함수 인자 포함)
   // - "es5": ES5에서 유효한 위치에만 후행 쉼표 추가
   // - "none": 후행 쉼표 사용 안 함
@@ -39,25 +39,25 @@ module.export = {
   bracketSpacing: true,
 
   // 화살표 함수 매개변수 괄호 사용 방식 (기본값: "always")
-  arrowParens: "always",
+  arrowParens: 'always',
   // - "always": (x) => x
   // - "avoid": x => x (매개변수가 하나일 때)
 
   // 줄 끝 문자 설정 (기본값: "lf")
-  endOfLine: "lf",
+  endOfLine: 'lf',
   // - "lf": \n (Unix)
   // - "crlf": \r\n (Windows)
   // - "cr": \r (Mac OS)
   // - "auto": 첫 줄 끝 문자 유지
 
   // 마크다운 텍스트의 줄바꿈 방식 (기본값: "preserve")
-  proseWrap: "never",
+  proseWrap: 'never',
   // - "always": 항상 printWidth에 따라 줄바꿈
   // - "never": 줄바꿈 하지 않음
   // - "preserve": 원본 텍스트 줄바꿈 유지
 
   // HTML 공백 처리 방식 (기본값: "css")
-  htmlWhitespaceSensitivity: "strict",
+  htmlWhitespaceSensitivity: 'strict',
   // - "css": CSS display 속성 기준으로 처리
   // - "strict": 모든 공백을 유지
   // - "ignore": 모든 공백을 무시
