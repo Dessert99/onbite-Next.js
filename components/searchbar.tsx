@@ -7,7 +7,7 @@ import { Suspense, useState } from 'react';
 
 function SearchbarContent() {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const searchParams = useSearchParams(); // 빌드 타임에는 값을 알 수 없다. -> 빌드 에러 -> 이 컴포넌트를 오직 클라이언트에서만 실행(사전 렌더링 배제)하면 된다.
   const q = searchParams.get('q');
 
   const [search, setSearch] = useState(q || '');

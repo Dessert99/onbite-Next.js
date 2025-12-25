@@ -1,3 +1,4 @@
+import { Footer } from '@/components/Footer';
 import Link from 'next/link';
 import './globals.css';
 
@@ -13,10 +14,8 @@ export default function RootLayout({
           <header className='h-15 text-xl font-bold leading-4'>
             <Link href={'/'}>📚 ONEBITE BOOKS</Link>
           </header>
-
           <main className='pt-5'>{children}</main>
-
-          <footer className='py-25 text-gray-500'>제작 @winterlood</footer>
+          <Footer />
         </div>
       </body>
     </html>
