@@ -1,5 +1,8 @@
 import { BookData } from '@/types/types';
+
 import { notFound } from 'next/navigation';
+
+// export const dynamicParams = false; // generateStaticParams에서 반환되지 않은 경로로 접속했을 때, 서버 측에서 실시간으로 페이지를 생성하지 않고 즉시 404를 반환하겠다
 
 // 역할: 정적인 파라미터를 생성한다. -> Page의 정적 페이지 변환을 위해 사용 -> 함수 이름은 예약어이다.
 export function generateStaticParams() {
