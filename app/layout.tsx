@@ -1,4 +1,3 @@
-import { Footer } from '@/components/Footer';
 import Link from 'next/link';
 import './globals.css';
 
@@ -15,7 +14,7 @@ export default function RootLayout({
             <Link href={'/'}>📚 ONEBITE BOOKS</Link>
           </header>
           <main className='pt-5'>{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </body>
     </html>
