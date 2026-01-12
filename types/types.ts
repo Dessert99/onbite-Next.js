@@ -9,7 +9,9 @@ export interface BookData {
 }
 
 export interface ReviewData {
-  bookId: number;
+  id: number;
   content: string;
   author: string;
+  bookId: number;
+  createdAt: string;
 }
